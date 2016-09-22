@@ -6,6 +6,8 @@
 int main(int argc, char* argv[])
 {
 	parseParam(argc, argv);
+    
+    printf("End Program");
 
 	return EXIT_SUCCESS;
 }	

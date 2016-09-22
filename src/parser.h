@@ -13,7 +13,7 @@ void parseParam(int count, char* para[])
 		{
 			print("Storm v0");
 		}
-		else if(1 == strpara(para[c], "-v"))
+		else if(1 == strpara(p, "-v"))
 		{
 			print("Storm v0");
 		}
@@ -49,7 +49,7 @@ void print(char* str)
 
 int strdiff(char* str1, char* str2)
 {
-	int count = sizeof(str2);
+	int count = sizeof(str1);
 	int ya = 1;
 	for(int c = 0; c < count; c++)
 	{
@@ -63,7 +63,7 @@ int strdiff(char* str1, char* str2)
 
 int strpara(char* str1, char* str2)
 {
-	int count = sizeof(str2);
+	int count = sizeof(str1);
    	int ya = 1;	
 	for(int c = 0; c < count; c++)
 	{

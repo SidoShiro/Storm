@@ -6,8 +6,15 @@ CFLAGS= -Wall -Wextra -std=c99 -O3
 LDFLAGS=
 LDLIBS=
 
-#Empty def rule
-all:
+SRC= storm.c parser.c
+OBJ= ${SRC:.c=.o}
 
-clean: rm -f *.o *~
+#Empty def rule
+all: storm
+
+storm: ${OBJ}
+
+clean:
+	rm -f *.o *~
+	rm storm
 

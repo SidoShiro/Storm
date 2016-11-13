@@ -7,7 +7,7 @@ int main(int argc, char* argv[])
 {
 	parseParam(argc, argv);
     
-    printf("End Program");
+    printf("End Program\n");
 
 	return EXIT_SUCCESS;
 }	

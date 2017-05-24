@@ -7,7 +7,7 @@ int main(int argc, char* argv[])
     /* Entrée du programme */
 
     /* Initialisation des variables */
-	int a = 2;
+    int a = 2;
     int b = 3;
     int c = a + b;
 
@@ -15,5 +15,5 @@ int main(int argc, char* argv[])
     printf("%d", c);
 
     /* Sortie du Porgramme */
-	return EXIT_SUCCESS;
+    return EXIT_SUCCESS;
 }

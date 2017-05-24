@@ -45,7 +45,7 @@ int main() {
     /* Sort by burst Time ! */
     struct process tmp;
     for(int b = 0; b < number; b++) {
-        for(int n = 1; n < number; n++) {
+        for(int n = 0; n < number; n++) {
             if(process[n].burstTime > process[b].burstTime) {
                 tmp = process[b];
                 process[b] = process[n];

@@ -53,11 +53,6 @@ int main() {
             }
         }
     }
-    /* Sort result */
-    printf("\nSort of jobs :\n");
-    for(int mm = 0; mm < number; mm++) {
-       printf("%d ", process[mm].ID);
-    }
 
     process[0].waitTime = 0;
     process[0].totalTime = process[0].burstTime;

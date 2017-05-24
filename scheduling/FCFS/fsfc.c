@@ -5,7 +5,7 @@
 
 /* Std Process Structure */
 struct process {
-    int processID;
+    int ID;
     int burstTime;
     int totalTime;
     int waitTime;
@@ -38,7 +38,7 @@ int main() {
     /* Burst time and ID attribution */
     for(i = 0; i < number; i++) {
         scanf("%d", &(process[i].burstTime));
-        process[i].processID = i + 1;
+        process[i].ID = i + 1;
     }
     printf("\n");
 
@@ -79,7 +79,7 @@ int main() {
     for(i = 0; i < number; i++) {
         printf("%4s%d\t %6d\t %6d\t %6d\t \n", 
                 "P", 
-                process[i].processID, 
+                process[i].ID, 
                 process[i].waitTime, 
                 process[i].burstTime, 
                 process[i].totalTime);
@@ -102,7 +102,7 @@ int main() {
         for(j = 0; j < k; j++) {
             printf(" ");
         }
-        printf("P%d", process[i].processID);
+        printf("P%d", process[i].ID);
         for(j = k + 1; j < process[i].burstTime; j++) {
             printf(" ");
         }
